@@ -2,6 +2,10 @@ import facebookwhite2x from "../img/facebookwhite2x.png";
 import instagramwhite from "../img/instagramwhite.png";
 import magnifiersearchwhite from "../img/magnifiersearchwhite.png"
 
+function alertSearch() {
+    alert("Clicking this would trigger a search for the text inserted on the input to the left: " + document.getElementById('searchString').value);
+}
+
 
 const TopHeader = () => {
     return (
@@ -13,8 +17,8 @@ const TopHeader = () => {
                 <img src={facebookwhite2x} alt="Small Facebook Icon" height="15" />
             </a>
             <div className="search">
-                <input type="text" />
-                <div>
+                <input type="text" id="searchString"/>
+                <div onClick={alertSearch}>
                     <img src={magnifiersearchwhite} alt="Search Magnifier" height="15" />
                 </div>
             </div>
