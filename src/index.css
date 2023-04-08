@@ -61,6 +61,7 @@ nav.sticky {
 
 .links {
   margin-left: auto;
+  
 }
 
 .links a {
@@ -69,6 +70,36 @@ nav.sticky {
   color: #246970;
   font-weight: 600;
   font-size: 14px;
+}
+
+.links a:hover {
+  color: aquamarine;
+}
+
+.links .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .links a {display: none;}
+  .links a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .links.responsive {position: relative;}
+  .links.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 
