@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.banner {
+  height: 300vh;
+}
+
 .App {
   background-color: #F9F9F9;
   
@@ -37,6 +41,15 @@
 
 .top-header input[type="text"] {
   background-color: #246970;
+}
+
+.sticky-header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 76px;
+  padding-right: 150px;
+  padding-left: 150px;
 }
 
 
