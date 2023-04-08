@@ -1,9 +1,11 @@
 import facebookwhite2x from "../img/facebookwhite2x.png";
 import instagramwhite from "../img/instagramwhite.png";
-import magnifiersearchwhite from "../img/magnifiersearchwhite.png"
+import magnifiersearchwhite from "../img/magnifiersearchwhite.png";
+import './TopHeader.css';
 
-function alertSearch() {
-    alert("Clicking this would trigger a search for the text inserted on the input to the left: " + document.getElementById('searchString').value);
+function showSearchAlert() {
+    const searchString = document.getElementById("searchString").value;
+    alert("Clicking this would search for " + searchString + " on the page");
 }
 
 
@@ -18,8 +20,8 @@ const TopHeader = () => {
             </a>
             <div className="search">
                 <input type="text" id="searchString"/>
-                <div onClick={alertSearch}>
-                    <img src={magnifiersearchwhite} alt="Search Magnifier" height="15" />
+                <div>
+                    <img src={magnifiersearchwhite} alt="Search Magnifier" height="15" onClick={showSearchAlert}/>
                 </div>
             </div>
         </nav>

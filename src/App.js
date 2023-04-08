@@ -5,6 +5,7 @@ import TopHeader from './components/TopHeader';
 
 function App() {
   return (
+    
     <div className="App">
       <TopHeader></TopHeader>
       <StickyHeader />
@@ -12,6 +13,7 @@ function App() {
         {/* <h1>O DESAFIO VISUALFORMA</h1> */}
       </div>
     </div>
+    
 
   );
 }

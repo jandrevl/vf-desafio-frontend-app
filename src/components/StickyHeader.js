@@ -1,26 +1,25 @@
 import { useState, useEffect } from "react";
 import autarquia360logo from "../img/autarquia360logo.jpg";
+import './StickyHeader.css';
 import hamburguericon from "../img/hamburguericon.png";
+
+
 
 
 
 function StickyHeader() {
 
+
+
+    const [showNavbar, setShowNavbar] = useState(false)
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar);
+    }
+
     const [sticky, setSticky] = useState(false);
-
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-
     useEffect(() => {
         const handleScroll = () => {
             setSticky(window.scrollY > 38);
-            console.log(window.scrollY);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -28,26 +27,46 @@ function StickyHeader() {
 
     return (
         <nav className={`${sticky ? "sticky" : ""}`}>
+
             <div className="sticky-header">
+
                 <div>
                     <a href="https://www.autarquia360.com/">
                         <img src={autarquia360logo} alt="Autarquia360 link" height="38" />
                     </a>
                 </div>
-                <div className="links" id="myTopnav">
-                    <a href="/">MUNICÍPIO</a>
-                    <a href="/">AUTARQUIA360</a>
-                    <a href="/">ATIVIDADE MUNICIPAL</a>
-                    <a href="/">SERVIÇOS ONLINE</a>
-                    <a href="/">CONTACTOS</a>
-                    <a href="javascript:void(0);" class="icon" onclick={ myFunction }>
-                        <img src={ hamburguericon } alt="menu icon" height="30" />
-                    </a>
+
+                <div className="links">
+
+                    <div className="menu-icon" onClick={handleShowNavbar}>
+                        <img src={hamburguericon} alt="menu item" height="25"/>
+                    </div>
+
+                    <div className={`nav-elements  ${showNavbar && 'active'}`}>
+                        <ul>
+                            <li>
+                                <a href="/">MUNICÍPIO</a>
+                            </li>
+                            <li>
+                                <a href="/">AUTARQUIA360</a>
+                            </li>
+                            <li>
+                                <a href="/">ATIVIDADE MUNICIPAL</a>
+                            </li>
+                            <li>
+                                <a href="/">SERVIÇOS ONLINE</a>
+                            </li>
+                            <li>
+                                <a href="/">CONTACTOS</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
         </nav>
     );
 }
+
 
 export default StickyHeader;

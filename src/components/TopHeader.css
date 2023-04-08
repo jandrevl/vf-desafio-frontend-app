@@ -1,0 +1,28 @@
+
+.top-header {
+    display: flex;
+    align-items: center;
+    background-color: #246970;
+    height: 38px;
+    padding-right: 138px;
+    padding-left: 138px;
+    
+  }
+  
+  .top-header a {
+    margin-left: 20px;
+  }
+  
+  .top-header .search {
+    margin-left: auto;
+    display: flex;
+  }
+  
+  .top-header .search div {
+    margin-left: 20px
+  }
+  
+  .top-header input[type="text"] {
+    background-color: #246970;
+    color: whitesmoke;
+  }
