@@ -1,0 +1,32 @@
+.big-image img {
+    max-width: 1163px;
+    max-height: 578px;
+}
+
+.news-box {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    background-color: #69A391;
+    padding: 48px 48px 48px 63px;
+    max-width: 621px;
+    opacity: 0.8;
+    
+}
+
+.news-box p {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF
+}
+
+.news-box a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+
+}
+
+
