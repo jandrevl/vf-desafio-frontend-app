@@ -3,12 +3,14 @@
 
 body {
   margin: auto;
+  max-width: 1366px;
+  
   ;
 }
 
 * {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1366px;
+  /* max-width: 1366px; */
   align-items: center;
 
 }

@@ -1,3 +1,9 @@
+.BigBanner {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
 .big-image img {
     max-width: 1163px;
     max-height: 578px;
@@ -5,13 +11,14 @@
 
 .news-box {
     position: absolute;
-    left: 30%;
-    top: 40%;
+    left: 50%;
+    top: 30%;
     background-color: #69A391;
-    padding: 48px 48px 48px 63px;
+    padding: 24px 24px 24px 42px;
     max-width: 621px;
     opacity: 0.8;
-    
+
+
 }
 
 .news-box p {
@@ -27,6 +34,39 @@
     color: #FFFFFF;
     letter-spacing: 2px;
 
+}
+
+.news-carousel {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    max-width: 50%;
+  
+
+}
+
+.news-carousel ul {
+    
+    display: flex;
+    overflow: auto;
+    padding-left: 0;
+    scroll-snap-type: x mandatory;
+    
+}
+
+.scroll-arrows {
+    position: absolute;
+    right: 50%;
+    
+}
+
+.scroll-arrows img {
+    margin-right: 17px;
+    
+}
+
+.scroll-arrows img:hover {
+    cursor: pointer;
 }
 
 
