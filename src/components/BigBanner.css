@@ -1,6 +1,6 @@
 .BigBanner {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 148px;
 }
 
 
@@ -48,7 +48,7 @@
 .news-carousel ul {
     
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     padding-left: 0;
     scroll-snap-type: x mandatory;
     
@@ -57,6 +57,7 @@
 .scroll-arrows {
     position: absolute;
     right: 50%;
+    bottom: -5%;
     
 }
 
