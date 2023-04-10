@@ -1,11 +1,10 @@
 import './NewsCard.css';
-// import cardImage from "../img/NewsCardsImages/cardImage.jpg";
-import smallrightarrow from "../img/smallrightarrow.png";
 
 
-const NewsCard = () => {
 
-    const cardData = { image: "/images/cardImage.jpg", newsDate: "27 - 07 - 2020", newsDescription: "Época das vindimas chegou. o que acontece quando o texto é grande demais para caber em três linhas apenas  " };
+const NewsCard = (props) => {
+
+    const cardData = props.item;
 
     return (
         <div className="NewsCard">
@@ -24,7 +23,7 @@ const NewsCard = () => {
 
             <div className="news-link">
                 <a href='/'>
-                    Ver mais <i><img src={smallrightarrow} alt="link arrow" /></i>
+                    Ver mais <i><img src= "/img/smallrightarrow.png" alt="link arrow" /></i>
                 </a>
             </div>
 

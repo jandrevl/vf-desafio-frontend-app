@@ -24,6 +24,20 @@ body {
   
 }
 
+.component-title-font {
+  font-weight: 500;
+  color: #3e3e40;
+  font-size: 18px;
+  letter-spacing: 1px;
+  
+
+}
+
+.component-title-underline {
+  border: 1px solid #21878F;
+  width: 62px;
+}
+
 
 
 

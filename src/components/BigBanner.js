@@ -1,10 +1,10 @@
-import belem from "../img/BigBanner_images/belem.jpg";
-import cintra from "../img/BigBanner_images/cintra.jpg";
-import falesia from "../img/BigBanner_images/falesia.jpg";
-import nazare from "../img/BigBanner_images/nazare.jpg";
-import porto from "../img/BigBanner_images/porto.jpg";
-import carouselarrow_left from "../img/carouselarrow_left.png";
-import carouselarrow_right from "../img/carouselarrow_right.png";
+// import belem from "../img/BigBanner_images/belem.jpg";
+// import cintra from "../img/BigBanner_images/cintra.jpg";
+// import falesia from "../img/BigBanner_images/falesia.jpg";
+// import nazare from "../img/BigBanner_images/nazare.jpg";
+// import porto from "../img/BigBanner_images/porto.jpg";
+// import carouselarrow_left from "../img/carouselarrow_left.png";
+// import carouselarrow_right from "../img/carouselarrow_right.png";
 
 import { useSnapCarousel } from "react-snap-carousel";
 import { useState } from "react";
