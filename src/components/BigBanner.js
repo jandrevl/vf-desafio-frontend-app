@@ -19,11 +19,11 @@ function BigBanner() {
 
     // Array 'hardcoded' apenas para fins de demonstração.
     const bannerData = [
-        { image: belem, caption: "Torre de Belém reaberta ao público a partir deste fim de semana", id: 0 },
-        { image: cintra, caption: "Palácio de Sintra considerado Património Mundial da Humanidade", id: 1 },
-        { image: falesia, caption: "Conheça as dez melhores praias secretas de Portugal", id: 2 },
-        { image: nazare, caption: "As melhores receitas tradicionais de peixe da Nazaré desvendadas", id: 3 },
-        { image: porto, caption: "Os melhores sítios para ficar numas férias na Cidade Invicta", id: 4 }
+        { image: "/img/BigBanner_images/belem.jpg", caption: "Torre de Belém reaberta ao público a partir deste fim de semana", id: 0 },
+        { image: "/img/BigBanner_images/cintra.jpg", caption: "Palácio de Sintra considerado Património Mundial da Humanidade", id: 1 },
+        { image: "/img/BigBanner_images/falesia.jpg", caption: "Conheça as dez melhores praias secretas de Portugal", id: 2 },
+        { image: "/img/BigBanner_images/nazare.jpg", caption: "As melhores receitas tradicionais de peixe da Nazaré desvendadas", id: 3 },
+        { image: "/img/BigBanner_images/porto.jpg", caption: "Os melhores sítios para ficar numas férias na Cidade Invicta", id: 4 }
     ];
 
     const [news, setNews] = useState(bannerData[0]);
@@ -73,8 +73,8 @@ function BigBanner() {
                 <div className="scroll-arrows">
                     {/* <button onClick={() => prev()}>Prev</button>
                     <button onClick={() => next()}>Next</button> */}
-                    <img src={ carouselarrow_left } alt="arrow left"  onClick={() => prev()} />
-                    <img src={ carouselarrow_right } alt="arrow right"  onClick={() => next()} />
+                    <img src= "/img/carouselarrow_left.png" alt="arrow left"  onClick={() => prev()} />
+                    <img src= "/img/carouselarrow_right.png" alt="arrow right"  onClick={() => next()} />
 
                 </div>
             </div>

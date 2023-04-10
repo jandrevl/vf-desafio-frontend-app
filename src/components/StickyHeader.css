@@ -56,6 +56,7 @@
       height: calc(100vh - 60px);
       transition: all 0.3s ease-in;
       overflow: hidden;
+      z-index: 1;
     }
   
     .nav-elements.active {

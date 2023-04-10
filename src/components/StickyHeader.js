@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import autarquia360logo from "../img/autarquia360logo.jpg";
 import './StickyHeader.css';
-import hamburguericon from "../img/hamburguericon.png";
+// import hamburguericon from "../img/hamburguericon.png";
+import barssolid from "../img/barssolid.svg";
 
 
 
@@ -39,7 +40,7 @@ function StickyHeader() {
                 <div className="links">
 
                     <div className="menu-icon" onClick={handleShowNavbar}>
-                        <img src={hamburguericon} alt="menu item" height="25"/>
+                        <img src={barssolid} alt="menu item" height="25"/>
                     </div>
 
                     <div className={`nav-elements  ${showNavbar && 'active'}`}>

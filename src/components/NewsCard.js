@@ -1,11 +1,11 @@
 import './NewsCard.css';
-import cardImage from "../img/NewsCardsImages/cardImage.jpg";
-import smallrightarrow from "../img/smallrightarrow.png"
+// import cardImage from "../img/NewsCardsImages/cardImage.jpg";
+import smallrightarrow from "../img/smallrightarrow.png";
 
 
 const NewsCard = () => {
 
-    const cardData = { image: cardImage, newsDate: "27 - 07 - 2020", newsDescription: "Época das vindimas chegou. o que acontece   " };
+    const cardData = { image: "/images/cardImage.jpg", newsDate: "27 - 07 - 2020", newsDescription: "Época das vindimas chegou. o que acontece quando o texto é grande demais para caber em três linhas apenas  " };
 
     return (
         <div className="NewsCard">
