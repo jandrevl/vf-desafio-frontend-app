@@ -11,31 +11,31 @@ const NewsComponent = () => {
             image: "https://picsum.photos/id/" + randomIndex + "/342/191",
             newsDate: "27 - 07 - 2020",
             newsDescription: "O que acontece quando o texto é grande demais para caber em três linhas apenas e temos de o truncar para o cartão não ficar esquisito",
-            categories: ["Categoria1", "Categoria2", "Categoria3"]
+            categories: ["Categorias", "De Vários", "Tamanhos diferentes"]
         },
         {
             image: "https://picsum.photos/id/" + (randomIndex + 1) + "/342/191",
             newsDate: "03 - 04 - 2023",
             newsDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            categories: ["Categoria1", "Categoria2", "Categoria3"]
+            categories: ["Categoria2"]
         },
         {
             image: "https://picsum.photos/id/" + (randomIndex + 2) + "/342/191",
             newsDate: "26 - 07 - 2022",
             newsDescription: "Lorem ipsum dolor sit amet",
-            categories: ["Categoria1", "Categoria2", "Categoria3"]
+            categories: ["Categoria1", "Categoria3"]
         },
         {
             image: "https://picsum.photos/id/" + (randomIndex + 3) + "/342/191",
             newsDate: "26 - 11 - 2021",
             newsDescription: "consectetur adipiscing elit",
-            categories: ["Categoria1", "Categoria2", "Categoria3"]
+            categories: ["Categoria3"]
         },
         {
             image: "https://picsum.photos/id/" + (randomIndex + 4) + "/342/191",
             newsDate: "19 - 05 - 2020",
             newsDescription: "O que acontece quando o texto",
-            categories: ["Categoria1", "Categoria2", "Categoria3"]
+            categories: ["Categoria2", "Categoria3"]
         },
 
     ]
