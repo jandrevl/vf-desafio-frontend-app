@@ -12,13 +12,18 @@
 .noticias-component-header a {
     font-weight: 400;
     font-size: 16px;
-    color: #64ae87;
+    color: #000000;
     text-decoration: none;
     
+}
+
+.noticias-component-header a:hover {
+    color: #64ae87;
 }
 
 .card-collection {
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }

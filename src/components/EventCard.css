@@ -1,0 +1,48 @@
+.event-card {
+    width: 342px;
+    height: 156px;
+    border: 1px solid magenta;
+    display: flex;
+    
+}
+
+.event-date-container {
+    height: 100%;
+    width: 125px;
+    background-color: #21878f;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.event-card:hover .event-date-container {
+    background-color: #fdac1d;
+}
+
+.event-date-container h1 {
+    font-size: 50px;
+    margin: 1px;
+
+}
+
+.event-date-container h3 {
+    font-size: 32px;
+    margin: 0px;
+
+}
+
+.event-date-container p {
+    font-size: 10px;
+    margin: 0px;
+}
+
+.reduced-event-date {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+

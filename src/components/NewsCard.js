@@ -1,4 +1,5 @@
 import './NewsCard.css';
+import { ReactComponent as RightArrow } from '../resources/rightarrow.svg'
 
 
 
@@ -36,7 +37,8 @@ const NewsCard = (props) => {
 
             <div className="news-link">
                 <a href='/'>
-                    Ver mais <i><img src= "/img/smallrightarrow.png" alt="link arrow" /></i>
+                    {/* Ver mais <i><img src= "/img/smallrightarrow.png" alt="link arrow" /></i> */}
+                    Ver mais <RightArrow height={13} width={26} fill='#64ae87' />
                 </a>
             </div>
 

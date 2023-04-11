@@ -1,6 +1,7 @@
 
 import './App.css';
 import BigBanner from './components/BigBanner';
+import EventCard from './components/EventCard';
 import NewsComponent from './components/NewsComponent';
 import StickyHeader from './components/StickyHeader';
 import TopHeader from './components/TopHeader';
@@ -13,6 +14,7 @@ function App() {
       <StickyHeader />
       <BigBanner />
       <NewsComponent />
+      <EventCard />
       <div className="banner">
         {/* <h1>O DESAFIO VISUALFORMA</h1> */}
       </div>

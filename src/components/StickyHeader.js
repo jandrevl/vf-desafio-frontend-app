@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import './StickyHeader.css';
 // import hamburguericon from "../img/hamburguericon.png";
 // import barssolid from "../img/barssolid.svg";
+import { ReactComponent as HamburguerIcon } from '../resources/barssolid.svg';
 
 
 
@@ -40,7 +41,8 @@ function StickyHeader() {
                 <div className="links">
 
                     <div className="menu-icon" onClick={handleShowNavbar}>
-                        <img src="/img/barssolid.svg" alt="menu item" height="25"/>
+                        {/* <img src="/img/barssolid.svg" alt="menu item" height="25"/> */}
+                        <HamburguerIcon height={25} fill="#246970"/>
                     </div>
 
                     <div className={`nav-elements  ${showNavbar && 'active'}`}>
