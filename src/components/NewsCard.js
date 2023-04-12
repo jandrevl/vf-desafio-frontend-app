@@ -6,8 +6,6 @@ import { ReactComponent as RightArrow } from '../resources/rightarrow.svg'
 const NewsCard = (props) => {
 
     const cardData = props.item;
-    console.log(cardData.categories)
-    console.log("cardData length is: " + cardData.length)
     let category2 = cardData.categories.length >=2? (
         <div className="category-tag">{ cardData.categories[1] }</div>
     ) : null;
