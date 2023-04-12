@@ -43,7 +43,7 @@ function BigBanner() {
 
                 <div className="news-box">
                     <p className="news-caption">{news.caption}</p>
-                    <br />
+                    <br className="news-break"/>
                     <a href="/">SABER MAIS</a>
                 </div>
 
@@ -71,8 +71,6 @@ function BigBanner() {
 
                 </div>
                 <div className="scroll-arrows">
-                    {/* <button onClick={() => prev()}>Prev</button>
-                    <button onClick={() => next()}>Next</button> */}
                     <img src= "/img/carouselarrow_left.png" alt="arrow left"  onClick={() => prev()} />
                     <img src= "/img/carouselarrow_right.png" alt="arrow right"  onClick={() => next()} />
 
