@@ -25,5 +25,14 @@
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+
+@media (max-width: 414px) {
+
+    .card-collection {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+       
 }

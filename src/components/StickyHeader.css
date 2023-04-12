@@ -1,82 +1,96 @@
 .sticky-header {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    height: 76px;
-    padding-right: 138px;
-    padding-left: 138px;
-  }
-  
-  nav.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  
-  .links {
-    margin-left: auto;
-    display: flex;
-   
-  }
-  
-  .links ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-  }
-  
-  .links a {
-    font-weight: 600;
-    color: #246970;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
-  }
-  
-  .links a:hover {
-    color: rgb(40, 147, 161);
-  }
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 76px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
 
+.autarquia-logo {
+  height: 38px;
+}
+
+nav.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.links a {
+  font-weight: 600;
+  color: #246970;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.links a:hover {
+  color: rgb(40, 147, 161);
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 1217px) {
   .menu-icon {
-    display: none;
+    display: block;
+    cursor: pointer;
   }
 
-  @media (max-width: 1217px) {
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .nav-elements {
-      position: absolute;
-      right: 0;
-      top: 114px;
-      background-color: #137a88;
-      width: 0px;
-      height: calc(100vh - 60px);
-      transition: all 0.3s ease-in;
-      overflow: hidden;
-      z-index: 1;
-    }
-  
-    .nav-elements.active {
-      width: 270px;
-    }
-  
-    .nav-elements ul {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .nav-elements ul li {
-      margin-right: unset;
-      margin-top: 22px;
-    }
-
-    .nav-elements ul li a {
-        color: whitesmoke;
-    }
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 114px;
+    background-color: #137a88;
+    width: 0px;
+    
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 1;
   }
 
- 
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+
+  .nav-elements ul li a {
+    color: whitesmoke;
+  }
+}
+
+@media (max-width: 414px) {
+
+  .sticky-header {
+    padding-left: 10%;
+    position: relative;
+  }
+
   
+
+
+}
+

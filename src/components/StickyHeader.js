@@ -4,6 +4,7 @@ import './StickyHeader.css';
 // import hamburguericon from "../img/hamburguericon.png";
 // import barssolid from "../img/barssolid.svg";
 import { ReactComponent as HamburguerIcon } from '../resources/barssolid.svg';
+import { ReactComponent as AutarquiaIcon } from '../resources/autarquia360.svg';
 
 
 
@@ -33,8 +34,10 @@ function StickyHeader() {
             <div className="sticky-header">
 
                 <div>
-                    <a href="https://www.autarquia360.com/">
-                        <img src= "/img/autarquia360logo.jpg" alt="Autarquia360 link" height="38" />
+                    <a className="autarquia-logo" href="https://www.autarquia360.com/">
+                        {/* <img src= "/img/autarquia360logo.jpg" alt="Autarquia360 link" height="38" /> */}
+                        <AutarquiaIcon className="autarquia-logo" />
+
                     </a>
                 </div>
 

@@ -5,6 +5,7 @@ import EventCard from './components/EventCard';
 import NewsComponent from './components/NewsComponent';
 import StickyHeader from './components/StickyHeader';
 import TopHeader from './components/TopHeader';
+import { ReactComponent as Autarquia} from './resources/autarquia360.svg';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <StickyHeader />
       <BigBanner />
       <NewsComponent />
-      <EventCard />
+      <Autarquia className='autarquia-logo'/>
       <div className="banner">
         {/* <h1>O DESAFIO VISUALFORMA</h1> */}
       </div>
