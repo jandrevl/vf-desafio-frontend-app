@@ -6,12 +6,14 @@ import { ReactComponent as Clock } from '../resources/clock-regular.svg';
 
 
 
-const EventCard = () => {
+const EventCard = (props) => {
 
     let startDatePT = { diaSemana: "", dia: "", mes: "", ano: "" };
     let endDatePT = { dia: "", mes: "", ano: "" };
 
-    const eventData = { startDate: "01/23/2023", endDate: "04/03/2023", category: "CATEGORIA", description: "Concurso de poesia palavras soltas em olhao ", location: "Localização", eventTime: "10h30" };
+    // const eventData = { startDate: "01/23/2023", endDate: "04/03/2023", category: "CATEGORIA", description: "Concurso de poesia palavras soltas em olhao ", location: "Localização", eventTime: "10h30" };
+
+    const eventData = props.generalEvent;
 
     const months = ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO", "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"];
     const days = ["DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO"];
@@ -35,7 +37,7 @@ const EventCard = () => {
                 <div>
                     <p className='category'> {eventData.category} </p>
                 </div>
-                <div>
+                <div className='event-description-link'>
                     <a href='/'> {eventData.description} </a>
                 </div>
                 <div>

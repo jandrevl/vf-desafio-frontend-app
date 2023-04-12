@@ -10,8 +10,7 @@
 
 .news-box {
     position: absolute;
-    /* left: 50%; */
-
+    left: 50%;
     top: 30%;
     background-color: #69A391;
     padding: 24px 24px 24px 42px;
@@ -77,8 +76,6 @@
 
     .news-box {
         position: absolute;
-
-        
         top: 20%;
         left: 0; 
         right: 0; 

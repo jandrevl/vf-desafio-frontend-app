@@ -2,11 +2,10 @@
 
 .event-card {
     width: 342px;
-
     height: 156px;
-    border: 1px solid magenta;
     display: flex;
     box-sizing: border-box;
+    background-color: white;
     
 }
 
@@ -27,7 +26,20 @@
     padding-left: 28px;
     display: block;
     align-items: flex-start;
+    background-color: white;
+    max-height: 156px;
    
+}
+
+.event-description-link {
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-description-link a {
+    text-overflow: ellipsis;
+    
 }
 
 .event-card:hover .event-date-container {
@@ -102,6 +114,10 @@ a {
 .category {
     color: #21878f;
     font-size: 10px;
+}
+
+.event-card:hover .category {
+    color: #fdac1d;
 }
 
 
