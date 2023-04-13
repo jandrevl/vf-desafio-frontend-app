@@ -35,7 +35,6 @@ function StickyHeader() {
 
                 <div>
                     <a className="autarquia-logo" href="https://www.autarquia360.com/">
-                        {/* <img src= "/img/autarquia360logo.jpg" alt="Autarquia360 link" height="38" /> */}
                         <AutarquiaIcon className="autarquia-logo" />
 
                     </a>
@@ -44,7 +43,6 @@ function StickyHeader() {
                 <div className="links">
 
                     <div className="menu-icon" onClick={handleShowNavbar}>
-                        {/* <img src="/img/barssolid.svg" alt="menu item" height="25"/> */}
                         <HamburguerIcon height={25} fill="#246970"/>
                     </div>
 

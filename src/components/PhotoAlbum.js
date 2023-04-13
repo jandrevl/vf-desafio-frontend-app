@@ -1,69 +1,48 @@
 import './PhotoAlbum.css';
-import { useState } from "react";
-import Slider from "react-touch-drag-slider";
+import { useSnapCarousel } from 'react-snap-carousel';
+import { ReactComponent as RightArrow } from '../resources/rightarrow.svg';
 
-const randomIndex = Math.floor(Math.random() * 200 + 201);
+const randomIndex = Math.floor(Math.random() * 100 + 1);
 const imageAlbum1 = [];
-    for (var j = 0; j < 10; j++) {
-        imageAlbum1.push(
-            {
-                imageURL: "https://picsum.photos/id/" + (randomIndex + j) + "/1200/800",
-                title: "image number " + (randomIndex + j)
-            })
-    }
+for (var j = 0; j < 10; j++) {
+    imageAlbum1.push(
+        {
+            imageURL: "https://picsum.photos/id/" + (randomIndex + j) + "/1200/800",
+            title: "image number " + (randomIndex + j)
+        })
 
-// const imageAlbum1 = [
-//     { imageURL: "/img/BigBanner_images/belem.jpg", title: "Torre de Belém reaberta ao público a partir deste fim de semana", id: 0 },
-//     { imageURL: "/img/BigBanner_images/cintra.jpg", title: "Palácio de Sintra considerado Património Mundial da Humanidade", id: 1 },
-//     { imageURL: "/img/BigBanner_images/falesia.jpg", title: "Conheça as dez melhores praias secretas de Portugal", id: 2 },
-//     { imageURL: "/img/BigBanner_images/nazare.jpg", title: "As melhores receitas tradicionais de peixe da Nazaré desvendadas", id: 3 },
-//     { imageURL: "/img/BigBanner_images/porto.jpg", title: "Os melhores sítios para ficar numas férias na Cidade Invicta", id: 4 }
-// ];
+}
 
 
 
 const PhotoAlbum = () => {
 
-    
-    const [index, setIndex] = useState(1);
 
-    const setFinishedIndex = (i) => {
-        console.log("finished dragging on slide", i);
-        setIndex(i);
-    };
-
-    const next = () => {
-        if (index < imageAlbum1.length - 1) setIndex(index + 1);
-    };
-
-    const previous = () => {
-        if (index > 0) setIndex(index - 1);
-    };
-
+    const { scrollRef, next, prev } = useSnapCarousel();
 
     return (
         <div className='photo-album-component'>
-            {/* <img src={imageAlbum1[0].imageURL} alt="teste" /> */}
-            <div className="image-slider">
-                <Slider
-                    onSlideComplete={setFinishedIndex}
-                    onSlideStart={(i) => {
-                        console.clear();
-                        console.log("started dragging on slide", i);
-                    }}
-                    activeIndex={index}
-                    threshHold={100}
-                    transition={0.2}
-                    scaleOnDrag={true}
-                >
-                    {imageAlbum1.map(({ imageURL, title }, index) => (
-                        <img src={imageURL} key={index} alt={title} />
-                    ))}
-                </Slider>
-            </div>
-            <button onClick={previous}>Button 1</button>
-            <button onClick={next}>Button 2</button>
 
+            <div className="image-slider">
+                <ul ref={scrollRef}>
+                    {imageAlbum1.map(({ imageURL, title }, index) => (
+
+                        <li>
+                            <img className='photo-item' src={imageURL} alt={title} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className="album-name-and-buttons">
+                <div className="album-name">
+                    <div className="name"> <span>Album de Fotos Várias</span> </div>
+                    <div> <RightArrow height={13} width={26} fill='whitesmoke' /> </div>
+                </div>
+                <div className="scroll-buttons">
+                    <div className="previous-button" onClick={prev}><RightArrow className='previous-arrow' /></div>
+                    <div className="next-button" onClick={next}><RightArrow className='next-arrow' /></div>
+                </div>
+            </div>
 
         </div>
     );
