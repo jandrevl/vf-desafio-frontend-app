@@ -1,12 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-/* body {
+body {
   margin: auto;
   max-width: 1366px;
   
   
-} */
+}
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -30,7 +30,6 @@
   font-size: 18px;
   letter-spacing: 1px;
   
-
 }
 
 .component-title-underline {
@@ -38,12 +37,35 @@
   width: 62px;
 }
 
+.mobile-link p{
+  text-align: center;
+}
+
+.mobile-link a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #69A391;
+  text-decoration: underline;
+  
+}
+.mobile-link {
+  display: none;
+}
+
+
+
+
 @media (max-width: 414px) {
-  /* body {
+  body {
     width: 100%;
     margin: 0;
     width: device-width;
-  } */
+  }
+
+  .mobile-link {
+    display: block;
+}
+
 }
 
 

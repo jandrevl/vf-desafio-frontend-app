@@ -31,6 +31,7 @@ const EventsComponent = () => {
             </div>
             <div className="component-title-underline"></div>
 
+
             <div className="events-activities">
 
                 <div className="events-collection">
@@ -39,7 +40,8 @@ const EventsComponent = () => {
                     ))}
                 </div>
 
-                <div className="activities">
+                <div className="activities-webbrowser">
+                    
                     <div className="activities-title">
                         <p>Atividades da Semana</p>
                     </div>
@@ -58,10 +60,34 @@ const EventsComponent = () => {
 
                     </div>
                 </div>
-
-
-
             </div>
+            
+            <div className='mobile-link'>
+                <br />
+                <p><a href="/">VER TODOS</a></p>
+                <br /><br />
+            </div>
+            
+            <div className="activities-mobile">
+               
+                    <div className="activities-title">
+                        <p>Atividades da Semana</p>
+                    </div>
+                    <div className="activities-list">
+
+                        { weekEvents.map((weekEvent) => (
+                        <div className="activity-item">
+                            <div style={{fontSize: "16", color: "#3e3e40"}}> { weekEvent.description} </div>
+                            <div className='day-time'>
+                            <div className='activity-schedule'> <Calendar className='calendar-icon' /> { weekEvent.weekDay } </div>
+                            <div className='activity-schedule'> <Clock className='clock-icon' /> { weekEvent.time } </div>
+                            </div>
+                            <hr style={{backgroundColor: "#EEEEEE"}}/>
+                        </div>
+                        ))}
+
+                    </div>
+                </div>
 
 
 

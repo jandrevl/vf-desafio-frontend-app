@@ -52,7 +52,12 @@ const NewsComponent = () => {
                 <NewsCard item={newsItems[0]} />
                 <NewsCard item={newsItems[1]} />
                 <NewsCard item={newsItems[2]} />
+            </div>
 
+            <div className='mobile-link'>
+                <br />
+                <p><a href="/">VER TODAS</a></p>
+                
             </div>
 
         </div>);

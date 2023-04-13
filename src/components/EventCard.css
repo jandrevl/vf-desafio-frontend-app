@@ -28,6 +28,8 @@
     align-items: flex-start;
     background-color: white;
     max-height: 156px;
+    /* width: 100%; */
+    width: 217px;
    
 }
 
@@ -120,5 +122,28 @@ a {
     color: #fdac1d;
 }
 
+@media (max-width: 414px) {
 
+    .event-card {
+        width: 302;
+        height: 156px;
+        display: flex;
+        box-sizing: border-box;
+        
+        
+    }
+
+    .event-date-container {
+        height: 100%;
+        width: 105px;
+        background-color: #21878f;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 105px;
+
+}
+
+}
 
