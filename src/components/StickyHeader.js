@@ -1,18 +1,10 @@
 import { useState, useEffect } from "react";
-// import autarquia360logo from "../img/autarquia360logo.jpg";
 import './StickyHeader.css';
-// import hamburguericon from "../img/hamburguericon.png";
-// import barssolid from "../img/barssolid.svg";
 import { ReactComponent as HamburguerIcon } from '../resources/barssolid.svg';
 import { ReactComponent as AutarquiaIcon } from '../resources/autarquia360.svg';
 
 
-
-
-
 function StickyHeader() {
-
-
 
     const [showNavbar, setShowNavbar] = useState(false)
     const handleShowNavbar = () => {

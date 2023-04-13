@@ -1,6 +1,3 @@
-// import facebookwhite2x from "../img/facebookwhite2x.png";
-// import instagramwhite from "../img/instagramwhite.png";
-// import magnifiersearchwhite from "../img/magnifiersearchwhite.png";
 import './TopHeader.css';
 
 function showSearchAlert() {

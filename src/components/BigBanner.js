@@ -9,8 +9,6 @@ import './BigBanner.css'
 
 function BigBanner() {
 
-
-    // Array 'hardcoded' apenas para fins de demonstração.
     const bannerData = [
         { image: "/img/BigBanner_images/belem.jpg", caption: "Torre de Belém reaberta ao público a partir deste fim de semana", id: 0 },
         { image: "/img/BigBanner_images/cintra.jpg", caption: "Palácio de Sintra considerado Património Mundial da Humanidade", id: 1 },
@@ -20,11 +18,7 @@ function BigBanner() {
     ];
 
     const [news, setNews] = useState(bannerData[0]);
-    // Isto significa: NESTE MOMENTO a variável news é igual a bannerData[0] (i.e. o primeiro elemento da array), 
-    //mas eu (o React) fico atento a qualquer alteração do valor desta variável para reagir em tempo real 
-    //onde quer que ela apareça no DOM
-
-    // const { scrollRef, pages, activePageIndex, next, prev } = useSnapCarousel();
+   
     const { scrollRef, next, prev } = useSnapCarousel();
 
 
@@ -69,11 +63,6 @@ function BigBanner() {
 
                 </div>
             </div>
-
-
-
-
-
 
         </div>
     );

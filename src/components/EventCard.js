@@ -11,8 +11,6 @@ const EventCard = (props) => {
     let startDatePT = { diaSemana: "", dia: "", mes: "", ano: "" };
     let endDatePT = { dia: "", mes: "", ano: "" };
 
-    // const eventData = { startDate: "01/23/2023", endDate: "04/03/2023", category: "CATEGORIA", description: "Concurso de poesia palavras soltas em olhao ", location: "Localização", eventTime: "10h30" };
-
     const eventData = props.generalEvent;
 
     const months = ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO", "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"];

@@ -19,7 +19,7 @@ function App() {
       <PhotoAlbum />
       
       <div className="banner">
-        {/* <h1>O DESAFIO VISUALFORMA</h1> */}
+
       </div>
     </div>
     
