@@ -4,7 +4,7 @@ import './NewsComponent.css';
 
 const NewsComponent = () => {
 
-    const randomIndex = Math.floor(Math.random() * 200);
+    const randomIndex = Math.floor(Math.random() * 200 + 1);
 
     const newsItems = [
         {

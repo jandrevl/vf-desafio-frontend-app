@@ -1,0 +1,23 @@
+.photo-album-component {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0px;
+    height: auto;
+    border: 2px solid blue
+}
+
+.image-slider {
+    width: 80%;
+    height: 80vh;
+    border: 1px solid red;
+    padding: 0px;
+    background-color: black;
+    
+}
+
+.Slider img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}

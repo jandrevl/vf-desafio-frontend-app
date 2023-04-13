@@ -1,13 +1,15 @@
-::-webkit-scrollbar {
-    /* width: 10px;
-    height: 0; */
-    display: none;
-}
+
 
 
 
 .events-component {
     margin: 0 10% 120px 10%;
+}
+
+.events-component ::-webkit-scrollbar {
+    /* width: 10px;
+    height: 0; */
+    display: none;
 }
 
 .general-events-header {
