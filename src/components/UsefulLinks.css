@@ -1,0 +1,26 @@
+
+
+.useful-links-component {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+}
+
+
+.component-header {
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.links-collection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    column-gap: 10px;
+}
+
+
+
+
+

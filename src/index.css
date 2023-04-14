@@ -7,6 +7,7 @@ body {
   min-width: 800px;
   
   
+  
 }
 
 * {
@@ -29,6 +30,7 @@ body {
   color: #3e3e40;
   font-size: 18px;
   letter-spacing: 1px;
+  margin: 0;
   
 }
 

@@ -29,8 +29,11 @@ const OfficialDocs = () => {
                     </div>
                     <div className="doctype-and-link">
                         <p>ATAS</p>
+                        <a href="/">
                         <LinkArrow className="link-arrow" fill='#FFFFFF' height="13" />
+                        </a>
                     </div>
+                    
                 </div>
 
                 <div id='card' className="editais-card">
@@ -39,7 +42,9 @@ const OfficialDocs = () => {
                     </div>
                     <div className="doctype-and-link">
                         <p>EDITAIS</p>
+                        <a href="/">
                         <LinkArrow className="link-arrow" fill='#FFFFFF' height="13" />
+                        </a>
                     </div>
                 </div>
 
@@ -49,7 +54,9 @@ const OfficialDocs = () => {
                     </div>
                     <div className="doctype-and-link">
                         <p>FORMULÁRIOS</p>
+                        <a href="/">
                         <LinkArrow className="link-arrow" fill='#FFFFFF' height="13" />
+                        </a>
                     </div>
                 </div>
 
@@ -59,7 +66,9 @@ const OfficialDocs = () => {
                     </div>
                     <div className="doctype-and-link">
                         <p>DOCUMENTOS</p>
+                        <a href="/">
                         <LinkArrow className="link-arrow" fill='#FFFFFF' height="13" />
+                        </a>
                     </div>
                 </div>
 
@@ -69,7 +78,9 @@ const OfficialDocs = () => {
                     </div>
                     <div className="doctype-and-link">
                         <p>INSCRIÇÕES</p>
+                        <a href="/">
                         <LinkArrow className="link-arrow" fill='#FFFFFF' height="13" />
+                        </a>
                     </div>
                 </div>
 

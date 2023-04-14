@@ -9,10 +9,10 @@ function showSearchAlert() {
 const TopHeader = () => {
     return (
         <nav className='top-header'>
-            <a href="https://www.instagram.com/visualforma/">
+            <a href="https://www.instagram.com/autarquia360/">
                 <img src= "/img/instagramwhite.png" alt="Instagram Icon" height="15" />
             </a>
-            <a href="https://pt-pt.facebook.com/visualforma/">
+            <a href="https://www.facebook.com/Autarquia360/">
                 <img src= "/img/facebookwhite2x.png" alt="Small Facebook Icon" height="15" />
             </a>
             <div className="search">
