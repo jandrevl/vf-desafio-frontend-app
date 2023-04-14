@@ -1,0 +1,44 @@
+
+#card {
+    width: 196px;
+    height: 259px;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+} 
+
+.doctype-and-link {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 24px;
+    margin-bottom: 10px;
+    width: 196px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* border: 1px solid magenta; */
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+
+.official-docs-component {
+    margin: 0 10% 120px 10%;
+    border: 1px solid red;
+}
+
+.document-links-collection {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.atas-card {
+    background-color: #246970;
+}
