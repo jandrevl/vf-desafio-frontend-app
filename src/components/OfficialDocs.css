@@ -2,11 +2,11 @@
 #card {
     width: 196px;
     height: 259px;
-    /* border: 1px solid greenyellow; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
 
 } 
 
@@ -30,15 +30,88 @@
 
 .official-docs-component {
     margin: 0 10% 120px 10%;
-    border: 1px solid red;
+}
+
+.official-docs-header {
+    padding-bottom: 0;
+    height: 20px;
 }
 
 .document-links-collection {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    
 
 }
 
 .atas-card {
     background-color: #246970;
+}
+
+.editais-card {
+    background-color: #69a391;
+}
+
+.formularios-card {
+    background-color: #21878F;
+}
+
+.documentos-card {
+    background-color: #64ae87;
+}
+
+.inscricoes-card {
+    background-color: #fdac1d;
+}
+
+@media (max-width: 1245px) {
+
+    .document-links-collection {
+        
+        justify-content: space-evenly;
+        
+    
+    }
+}
+
+@media (max-width: 414px) {
+
+    #card {
+        width: 100%;
+        height: 56px;
+        /* border: 1px solid greenyellow; */
+    } 
+
+    .doc-icon {
+        display: none;
+    }
+
+    .link-arrow {
+        display: none;
+    }
+
+    .official-docs-header {
+        width: 50%;
+        height: auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .official-docs-header p {
+        margin: 0;
+    }
+
+    .doctype-and-link {
+        padding: 0;
+        margin: 0;
+        position: static;
+        width:auto
+    }
+
+    .doctype-and-link p{
+        padding: 0;
+        margin: 0;
+    }
 }

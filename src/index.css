@@ -4,6 +4,7 @@
 body {
   margin: auto;
   max-width: 1366px;
+  min-width: 800px;
   
   
 }
@@ -59,6 +60,7 @@ body {
     width: 100%;
     margin: 0;
     width: device-width;
+    min-width: 0px;
   }
 
   .mobile-link {
