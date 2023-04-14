@@ -137,8 +137,8 @@
 
     .activities-mobile {
         display: flex;
-         flex-direction: column;
-        width: 342px;
+        flex-direction: column;
+        width: 100%;
         max-height: 342px;
         overflow: scroll;
         margin: 0px 0px 0px 0px;

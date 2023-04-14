@@ -3,7 +3,7 @@ import './App.css';
 import BigBanner from './components/BigBanner';
 import EventsComponent from './components/EventsComponent';
 import FinalInformation from './components/FinalInformation';
-import Location from './components/Location';
+// import Location from './components/Location';
 import NewsComponent from './components/NewsComponent';
 import OfficialDocs from './components/OfficialDocs';
 import PhotoAlbum from './components/PhotoAlbum';
@@ -24,9 +24,10 @@ function App() {
       <PhotoAlbum />
       <OfficialDocs />
       <UsefulLinks />
-      <Location />
+      {/* <Location /> */}
       <FinalInformation />
       <Footer />
+      
       
       
       <div className="banner">

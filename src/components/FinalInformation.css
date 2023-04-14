@@ -1,0 +1,158 @@
+#separator-line {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* width:90px; */
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.final-information-component {
+    box-sizing: border-box;
+    /* border: 1px solid magenta; */
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    margin: 0;
+    background-color: #246970;
+    /* border-top: 1px solid #ffffff; */
+    /* border-bottom: 1px solid #ffffff; */
+    color: #FFFFFF;
+    height:354px;
+
+}
+
+#info-section {
+    width:249px;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 300;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mail-input {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.mail-input input {
+    box-sizing: border-box;
+    border: none;
+    background-color: #246970;
+    color: #FFFFFF;
+    width:80%;
+
+}
+
+.mail-input input::placeholder {
+    color:#FFFFFF;
+    font-size: 10px;
+}
+
+.mail-input input::-ms-input-placeholder {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+button {
+    background-color: #246970;
+    border: none;
+    float: right;
+}
+
+.subscribe-section p {
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.subscribe-section p a {
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.subscribe-section p input {
+    height: 10px;
+    margin-left: 0;
+    background-color: #246970;
+}
+
+#share {
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+.social-media-icons {
+    display: flex;
+    column-gap: 5px;
+}
+
+#social-icons {
+    height: 46px;
+    width: 46px;
+    border:1px solid #FFFFFF;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#social-icons:hover {
+    background-color: #FFFFFF;
+}
+
+#social-icons:hover #icon {
+    fill:#246970
+}
+
+@media (max-width: 414px) {
+
+    .final-information-component {
+   flex-direction: column;
+   height: auto;
+   width:100%;
+   padding-bottom: 36px;
+
+    }
+
+    #share {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+    }
+
+    div ul {
+        display:none;
+    }
+
+    #info-section:hover ul {
+        display:block;
+    }
+
+    
+
+
+}
