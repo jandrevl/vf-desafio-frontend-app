@@ -5,6 +5,7 @@
   height: 76px;
   padding-right: 10%;
   padding-left: 10%;
+  position: relative;
 }
 
 .autarquia-logo {
@@ -54,7 +55,7 @@ nav.sticky {
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 114px;
+    top: 76px;
     background-color: #137a88;
     width: 0px;
     
