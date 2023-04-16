@@ -11,12 +11,6 @@ function StickyHeader() {
         setShowNavbar(!showNavbar);
     }
 
-    // window.addEventListener('click', function(e)  {
-    //     if (!(document.getElementById))
-    // }
-    
-    // )
-
     const [sticky, setSticky] = useState(false);
     useEffect(() => {
         const handleScroll = () => {

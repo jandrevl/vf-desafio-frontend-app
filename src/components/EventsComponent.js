@@ -7,19 +7,19 @@ import { ReactComponent as Clock } from '../resources/clock-regular.svg';
 const EventsComponent = () => {
 
     const events = [
-        { startDate: "05/01/2023", endDate: null, category: "CATEGORIA", description: "Descrição de um evento importantíssimo a decorrer no próximo dia um de Maio", location: "Local do Evento", eventTime: "10h30" },
-        { startDate: "06/01/2023", endDate: "06/15/2023", category: "CATEGORIA", description: "Campo de Férias Os Petizes", location: "Localização", eventTime: "10h30" },
-        { startDate: "07/15/2023", endDate: "07/21/2023", category: "CATEGORIA", description: "Festas Tradicionais da Nossa Senhora da Cerveja Fresca", location: "Localização", eventTime: "10h30" },
-        { startDate: "09/22/2023", endDate: null, category: "CATEGORIA", description: "Festival de Stand Up Comedy Prata da Casa", location: "Localização", eventTime: "10h30" }
+        { startDate: "05/01/2023", endDate: null, category: "CATEGORIA", description: "Descrição de um evento importantíssimo a decorrer no próximo dia um de Maio", location: "Local do Evento", eventTime: "10h30", id: 1 },
+        { startDate: "06/01/2023", endDate: "06/15/2023", category: "CATEGORIA", description: "Campo de Férias Os Petizes", location: "Localização", eventTime: "10h30", id: 2},
+        { startDate: "07/15/2023", endDate: "07/21/2023", category: "CATEGORIA", description: "Festas Tradicionais da Nossa Senhora da Cerveja Fresca", location: "Localização", eventTime: "10h30", id: 3},
+        { startDate: "09/22/2023", endDate: null, category: "CATEGORIA", description: "Festival de Stand Up Comedy Prata da Casa", location: "Localização", eventTime: "10h30", id: 4}
     ]
 
     const weekEvents = [
-        { description: "Aula de Dança", weekDay: "Quinta-Feira", time: "19h30" },
-        { description: "Mercado de Velharias", weekDay: "Sábado", time: "08h00" },
-        { description: "Concerto de Piano", weekDay: "Sábado", time: "21h00" },
-        { description: "Caminhada Pela Natureza", weekDay: "Domingp", time: "09h00" },
-        { description: "Aula de Capoeira", weekDay: "Segunda-Feira", time: "19h30" },
-        { description: "Workshop de Culinária", weekDay: "Terça-Feira", time: "20h30" }
+        { description: "Aula de Dança", weekDay: "Quinta-Feira", time: "19h30", id: 1},
+        { description: "Mercado de Velharias", weekDay: "Sábado", time: "08h00", id: 2},
+        { description: "Concerto de Piano", weekDay: "Sábado", time: "21h00", id: 3 },
+        { description: "Caminhada Pela Natureza", weekDay: "Domingp", time: "09h00", id: 4 },
+        { description: "Aula de Capoeira", weekDay: "Segunda-Feira", time: "19h30", id: 5 },
+        { description: "Workshop de Culinária", weekDay: "Terça-Feira", time: "20h30", id: 6 }
     ]
 
     return (
